@@ -1,0 +1,55 @@
+% =========================================================================== %
+% Generic LaTeX template for a document
+% Copyright (C) 2014  Federico "MrModd" Cosentino (http://mrmodd.it/)
+% front cover based on template by Peter Wilson (herries.press@earthlink.net)
+% released under the CC BY-NC-SA 3.0
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+% =========================================================================== %
+
+\usepackage{textcase} % \MakeTextUppercase
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\newcommand*{\printtitle}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+% MAIN TITLE
+{\LARGE \MakeTextUppercase{\firstlinetitle}
+		\\\MakeTextUppercase{\secondlinetitle} % You can comment this line
+		\\[0.3\baselineskip]\MakeTextUppercase{\thirdlinetitle} % And this line
+}\\[0.2\baselineskip] % Title
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+% Small caps
+\scshape
+
+\subtitle \\ % Comment this line if you don't want a subtitle
+
+% Whitespace between location/year and editors
+\vspace*{2\baselineskip}
+
+Authors \\[\baselineskip] % Comment this line if you don't want "Authors" to appear
+{\Large \authorsname \par} % And also this line if you don't want authors at all
+
+\vfill % Whitespace between editor names and publisher logo
+
+{\scshape \documentdate} \\[0.3\baselineskip] % Comment this line if you don't want the date on the front page
+
+\endgroup}

@@ -1,0 +1,71 @@
+% =========================================================================== %
+% Generic LaTeX template for a document
+% Copyright (C) 2014  Federico "MrModd" Cosentino (http://mrmodd.it/)
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+% =========================================================================== %
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required to insert images
+\usepackage{hyperref} % Used for links
+\usepackage{wrapfig} % Wrapping figure around text
+\usepackage{lastpage} % Required to determine the last page for the footer
+
+\hypersetup {
+	colorlinks,
+	citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=red,
+    linktocpage
+}
+\graphicspath{ {images/} } % All images must be placed under "images" directory and must be in png format
+\newcommand{\sourcepath}{sources/} % All codes must be placed under "sources" directory
+
+
+
+\include{header} % Check here for title, authors and other definitions
+\include{lang_header} % Just leave this file as it is, unless you know what are you doing
+\include{front} % Modify this page if you'd like to remove some fields on the front page
+
+
+
+\begin{document}
+\pagenumbering{roman}
+\rfoot{\thepage}
+
+% Front page
+\printtitle
+\thispagestyle{empty} % Hide header and footer for this page
+
+% Table of Contents
+\newpage
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+\tableofcontents
+\newpage 
+\pagenumbering{arabic}
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+
+% Main sections
+\include{section1}
+\include{section2}
+\include{section3}
+
+\end{document}

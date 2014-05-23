@@ -1,0 +1,8 @@
+<!-- Edited by XMLSpy -->
+<note>
+	<to id="T123">Tove</to>
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don't forget me this weekend!</body>
+	<number>123</number>
+</note>
