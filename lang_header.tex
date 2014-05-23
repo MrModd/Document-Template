@@ -49,10 +49,16 @@
 			{ò}{{\`{o}}}1
 			{ù}{{\`{u}}}1
 			{È}{{\`{E}}}1
+			% These are special character used in italian language
+			% If not overridden they are rendered wrong
+			% Add other literal in the format {a}{{b}}1
+			% That is: when you read a, substitute b
+			% Check on the internet for more complex literal formats
 	}
 }
 
 % The first parameter is the filename of the script (without extension), the second parameter is the caption
+% \perlcode{source_file}{caption}
 \newcommand{\perlcode}[2]{
 \lstset{language=Perl,
 		inputencoding=utf8,
@@ -81,6 +87,7 @@
 \end{itemize}
 }
 
+% \ccode{source_file}{caption}
 \newcommand{\ccode}[2]{
 \lstset{language=C,
 		inputencoding=utf8,
@@ -109,6 +116,7 @@
 \end{itemize}
 }
 
+% \cppcode{source_file}{caption}
 \newcommand{\cppcode}[2]{
 \lstset{language=C++,
 		inputencoding=utf8,
@@ -137,6 +145,7 @@
 \end{itemize}
 }
 
+% \javacode{source_file}{caption}
 \newcommand{\javacode}[2]{
 \lstset{language=Java,
 		inputencoding=utf8,
@@ -165,6 +174,7 @@
 \end{itemize}
 }
 
+% \pythoncode{source_file}{caption}
 \newcommand{\pythoncode}[2]{
 \lstset{language=Python,
 		inputencoding=utf8,
@@ -193,6 +203,7 @@
 \end{itemize}
 }
 
+% \bashcode{source_file}{caption}
 \newcommand{\bashcode}[2]{
 \lstset{language=bash,
 		inputencoding=utf8,
@@ -221,6 +232,7 @@
 \end{itemize}
 }
 
+% \xmlcode{source_file}{caption}
 \newcommand{\xmlcode}[2]{
 \lstset{inputencoding=utf8,
         frame=single,
@@ -251,6 +263,7 @@
 \end{itemize}
 }
 
+% \htmlcode{source_file}{caption}
 \newcommand{\htmlcode}[2]{
 \lstset{inputencoding=utf8,
         frame=single,
