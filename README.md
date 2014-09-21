@@ -2,7 +2,6 @@
 
 ---------------------------------------------------------------------
 
-
 Copyright (C) 2014  Federico "MrModd" Cosentino (http://mrmodd.it/)
 
 Front cover based on template by Peter Wilson (herries.press@earthlink.net)
@@ -26,17 +25,17 @@ GNU General Public License for more details.
 ## Where you can find what you're looking for
 
 - **index.tex** is the first file parsed. Here you can define the language,
-  the packages to include and the document sections
+  the packages to include and the document sections.
 - **header.tex** contains the definitions for authors names, document title
-  and so on. You can also find directives for page margins, header and footer
+  and so on. You can also find directives for page margins, header and footer.
 - **front.tex** build the front page of the document. You can leave it as it is
-  or you can delete some lines. Moreover you should replace the logo image with your own
+  or you can delete some lines. Moreover you should replace the logo image with your own.
 - **lang_header.tex** you don't need to modify this. It explains how to print code.
   You can use following commands: *\perlcode{source_file}{caption}*,
   *\ccode{source_file}{caption}*, *\cppcode{source_file}{caption}*,
   *\javacode{source_file}{caption}*, *\pythoncode{source_file}{caption}*,
   *\bashcode{source_file}{caption}*, *\xmlcode{source_file}{caption}*,
-  *\htmlcode{source_file}{caption}*
+  *\htmlcode{source_file}{caption}*.
 - **section1.tex** to **section3.tex** are examples of sections. You can remove them,
   but remember to remove them from inclusion in **index.tex** too.
 
@@ -58,7 +57,7 @@ All pieces of codes should be in **sources** folder. You can recall a source fil
 with commands explained before. When writing file name you should specify its
 extension.
 You can change the folder editing *\newcommand{\sourcepath}{sources/}* command in
-**index.tex** file
+**index.tex** file.
 
 
 
