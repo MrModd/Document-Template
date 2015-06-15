@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------
 
-Copyright (C) 2014  Federico "MrModd" Cosentino (http://mrmodd.it/)
+Copyright (C) 2015  Federico "MrModd" Cosentino (http://mrmodd.it/)
 
 Front cover based on template by Peter Wilson (herries.press@earthlink.net)
 released under the CC BY-NC-SA 3.0

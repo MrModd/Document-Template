@@ -1,6 +1,6 @@
 % =========================================================================== %
 % Generic LaTeX template for a document
-% Copyright (C) 2014  Federico "MrModd" Cosentino (http://mrmodd.it/)
+% Copyright (C) 2015  Federico "MrModd" Cosentino (http://mrmodd.it/)
 %
 % This program is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -23,11 +23,18 @@
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+% Graphic packages
 \usepackage{graphicx} % Required to insert images
-\usepackage{hyperref} % Used for links
+\usepackage{float} % Required to use [H] parameter in figure blocks
 \usepackage{wrapfig} % Wrapping figure around text
-\usepackage{lastpage} % Required to determine the last page for the footer
+% Bibliography
 \usepackage{cite} % Bibtex
+% Maths packages
+\usepackage{amsmath} % Required for equation blocks
+\numberwithin{equation}{subsection} % Defines how to enumerate equations
+% Other packages
+\usepackage{hyperref} % Used for links
+\usepackage{lastpage} % Required to determine the last page for the footer
 
 \hypersetup {
 	colorlinks,
