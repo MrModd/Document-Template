@@ -27,6 +27,7 @@
 \usepackage{hyperref} % Used for links
 \usepackage{wrapfig} % Wrapping figure around text
 \usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{cite} % Bibtex
 
 \hypersetup {
 	colorlinks,
@@ -67,5 +68,14 @@
 \include{section1}
 \include{section2}
 \include{section3}
+
+% Choose the style of bibliography
+\bibliographystyle{plain}
+%\bibliographystyle{ieeetr}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{alpha}
+%\bibliographystyle{apalike}
+%\bibliographystyle{siam}
+\bibliography{bibliography}
 
 \end{document}

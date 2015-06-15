@@ -5,4 +5,6 @@
 *.snm
 *.synctex.gz
 *.toc
+*.bbl
+*.blg
 *.pdf
