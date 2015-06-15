@@ -29,6 +29,8 @@
 \usepackage{wrapfig} % Wrapping figure around text
 % Bibliography
 \usepackage{cite} % Bibtex
+% Appendix
+\usepackage[title,titletoc]{appendix} % title: shows the appendix title at the begining of the section; titletoc: shows the appendix title in the index
 % Maths packages
 \usepackage{amsmath} % Required for equation blocks
 \numberwithin{equation}{subsection} % Defines how to enumerate equations
@@ -75,6 +77,10 @@
 \include{section1}
 \include{section2}
 \include{section3}
+
+\begin{appendices}
+\include{appendices}
+\end{appendices}
 
 % Choose the style of bibliography
 \bibliographystyle{plain}
